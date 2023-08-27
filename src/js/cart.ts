@@ -99,7 +99,7 @@ class CartStore {
       listItem.classList.add("c-list__item");
       listItem.innerHTML = `
         <div class="c-list__start">
-            <img src="${item.image}" />
+            <img src="${import.meta.env.BASE_URL + item.image}" />
         </div>
         <div class="c-list__body">
             <span>${item.title}</span>
