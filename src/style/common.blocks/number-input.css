@@ -1,0 +1,28 @@
+.c-number-input {
+  display: flex;
+  padding: var(--spacer);
+  border-radius: var(--rounded);
+  background-color: var(--color-light-gray-blue);
+}
+
+.c-number-input__control {
+  width: 100%;
+  flex-grow: 1;
+  border: none;
+  background-color: transparent;
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+  text-align: center;
+}
+
+.c-number-input__add,
+.c-number-input__remove {
+  min-width: 2rem;
+  background-color: transparent;
+  line-height: 0;
+}
+
+.c-number-input__add:focus,
+.c-number-input__remove:focus {
+  outline: 2px solid var(--color-red);
+}

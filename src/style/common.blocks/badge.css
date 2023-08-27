@@ -1,0 +1,14 @@
+.c-badge {
+  display: inline-block;
+  padding: calc(var(--spacer-xs) * 2);
+  border-radius: var(--rounded-sm);
+  background-color: var(--color-orange-pale);
+  color: var(--color-orange);
+  font-weight: var(--font-weight-bold);
+  line-height: 0.7;
+}
+
+.c-badge--small {
+  padding: var(--spacer-xs) calc(var(--spacer-xs) * 2);
+  font-size: var(--font-size-xs);
+}

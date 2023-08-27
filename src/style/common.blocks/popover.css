@@ -1,0 +1,30 @@
+.c-popover {
+  position: absolute;
+  display: none;
+  width: 360px;
+  padding: var(--spacer-xl);
+  border-radius: var(--rounded);
+  background-color: var(--color-white);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.c-popover__title {
+  padding: var(--spacer-xl);
+  padding-top: 0;
+  border-bottom: 1px solid var(--color-gray-blue);
+  margin: 0 calc(0px - var(--spacer-xl));
+  font-weight: var(--font-weight-bold);
+}
+
+.c-popover__body {
+  padding: var(--spacer) 0;
+}
+
+@media (max-width: 576px) {
+  .c-popover {
+    right: 0 !important;
+    left: 0 !important;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}

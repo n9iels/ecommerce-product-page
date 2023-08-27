@@ -1,0 +1,33 @@
+.h-no-scroll {
+  overflow: hidden;
+}
+
+.h-sr-only {
+  position: absolute;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  border-width: 0;
+  margin: -1px;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+}
+
+.h-rounded {
+  border-radius: 1rem;
+}
+
+.h-fw-bold {
+  font-weight: var(--font-weight-bold);
+}
+
+.h-show {
+  display: block;
+}
+
+@media (max-width: 992px) {
+  .l-remove-margin-xl\@mobile {
+    margin-inline: calc(0px - var(--spacer-xl));
+  }
+}

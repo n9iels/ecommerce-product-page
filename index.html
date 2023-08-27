@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sneakers - Frontend Mentor project</title>
+  </head>
+  <body>
+    <header class="c-header">
+      <div class="c-header__menu-button">
+        <button
+          class="c-button"
+          data-offcanvas="offcanvas-menu"
+          aria-label="Toggle menu"
+        >
+          <img src="/icons/icon-menu.svg" />
+        </button>
+      </div>
+      <img class="c-header__logo" src="/images/logo.svg" alt="" />
+      <nav class="c-header__navigation">
+        <ul class="c-nav c-nav--horizontal">
+          <li class="c-nav__item">
+            <a class="c-nav__link" href="#">Collections</a>
+          </li>
+          <li class="c-nav__item"><a class="c-nav__link" href="#">Men</a></li>
+          <li class="c-nav__item"><a class="c-nav__link" href="#">Women</a></li>
+          <li class="c-nav__item"><a class="c-nav__link" href="#">About</a></li>
+          <li class="c-nav__item">
+            <a class="c-nav__link" href="#">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="c-header__right">
+        <ul class="c-nav c-nav--horizontal c-nav--align-end">
+          <li class="c-nav__item c-nav__item--no-hover">
+            <button
+              class="c-button c-button--badge"
+              aria-label="Cart"
+              data-popover="popover-cart"
+            >
+              <span class="c-badge c-badge--small" data-cart-quantity></span>
+              <img src="/icons/icon-cart-gray.svg" alt="" />
+            </button>
+          </li>
+          <li class="c-nav__item c-nav__item--no-hover">
+            <img
+              src="/images/image-avatar.png"
+              width="50"
+              height="50"
+              alt="Profile picture"
+            />
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main class="l-main l-main--product">
+      <div class="l-grid l-grid--cols-2 l-grid--gap-4xl l-grid--h-center">
+        <div class="l-remove-margin-xl@mobile">
+          <div class="c-gallery" data-gallery>
+            <div class="c-gallery__current">
+              <img
+                data-gallery-current-image
+                src="/images/image-product-1.jpg"
+                alt="Prodcut photo of a pair of sneakers placed on a orange background. The sneakers have a white sole, a brown-white shoe and a orange heel."
+              />
+              <button
+                class="c-gallery__next-button"
+                aria-label="Next picture"
+                data-gallery-next
+              >
+                <img src="/icons/icon-next.svg" width="38" height="38" alt="" />
+              </button>
+              <button
+                class="c-gallery__prev-button"
+                aria-label="Previous picture"
+                data-gallery-prev
+              >
+                <img
+                  src="/icons/icon-previous.svg"
+                  width="38"
+                  height="38"
+                  alt=""
+                />
+              </button>
+            </div>
+            <nav class="c-gallery__thumbnails" aria-label="Gallery navigation">
+              <ol class="c-gallery__nav-list">
+                <li class="c-gallery__nav-item c-gallery__nav-item">
+                  <button
+                    class="c-gallery__nav-button"
+                    data-gallery-nav="/images/image-product-1.jpg"
+                  >
+                    <span class="h-sr-only">Image 1</span>
+                    <img src="/images/image-product-1-thumbnail.jpg" alt="" />
+                  </button>
+                </li>
+                <li class="c-gallery__nav-item">
+                  <button
+                    class="c-gallery__nav-button"
+                    data-gallery-nav="/images/image-product-2.jpg"
+                  >
+                    <span class="h-sr-only">Image 2</span>
+                    <img src="/images/image-product-2-thumbnail.jpg" alt="" />
+                  </button>
+                </li>
+                <li class="c-gallery__nav-item">
+                  <button
+                    class="c-gallery__nav-button"
+                    data-gallery-nav="/images/image-product-3.jpg"
+                  >
+                    <span class="h-sr-only">Image 3</span>
+                    <img src="/images/image-product-3-thumbnail.jpg" alt="" />
+                  </button>
+                </li>
+                <li class="c-gallery__nav-item">
+                  <button
+                    class="c-gallery__nav-button"
+                    data-gallery-nav="/images/image-product-4.jpg"
+                  >
+                    <span class="h-sr-only">Image 4</span>
+                    <img src="/images/image-product-4-thumbnail.jpg" alt="" />
+                  </button>
+                </li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+        <div class="c-product">
+          <p class="c-product__brand">Sneaker company</p>
+          <h1 class="c-product__title">Fall Limited Edition Sneakers</h1>
+          <div class="c-product__description">
+            These low-profile sneakers are your perfect casual wear companion.
+            Featuring a durable rubber outer solr, they'll withstand everything
+            the weather can offer.
+          </div>
+          <div>
+            <div class="h-sr-only">$125 instead of $225</div>
+            <div class="c-product__price" aria-hidden="true">$125.00</div>
+            <div class="c-product__discount">
+              <div class="c-badge">
+                50% <span class="h-sr-only">discount</span>
+              </div>
+            </div>
+            <div
+              class="c-product__price c-product__price--strike-trough"
+              aria-hidden="true"
+            >
+              $225.00
+            </div>
+          </div>
+          <div class="c-product__controls">
+            <div class="c-number-input" data-number-input>
+              <button
+                class="c-number-input__remove"
+                data-number-minus
+                aria-label="Remove one"
+              >
+                <img src="/icons/icon-minus.svg" alt="" />
+              </button>
+              <label>
+                <span class="h-sr-only">Quantity</span>
+                <input
+                  class="c-number-input__control"
+                  id="item-quantity"
+                  type="text"
+                  value="1"
+                />
+              </label>
+              <button
+                class="c-number-input__add"
+                aria-label="Remove one"
+                data-number-plus
+              >
+                <img src="/icons/icon-plus.svg" alt="" />
+              </button>
+            </div>
+            <button
+              class="c-button c-button--primary c-button--shadow c-button--full-width"
+              data-add-to-cart
+              data-item='{ "title": "Fall Limited Editiion Sneakers", "price": 125, "quantity": 1, "image": "/images/image-product-1.jpg" }'
+              data-quantity-input-ref="item-quantity"
+            >
+              <img
+                class="c-button__icon"
+                src="/icons/icon-cart-white.svg"
+                alt=""
+              />
+              Add to cart
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div id="popover-cart" class="c-popover">
+      <div class="c-popover__title">Cart</div>
+      <div class="c-popover__body">
+        <ul class="c-list" data-cart-content></ul>
+      </div>
+      <div class="c-popover__footer">
+        <button class="c-button c-button--primary c-button--full-width">
+          Checkout
+        </button>
+      </div>
+    </div>
+
+    <div id="offcanvas-menu" class="c-offcanvas c-offcanvas--active">
+      <div class="c-offcanvas__container">
+        <div class="c-offcanvas__header">
+          <button data-offcanvas-close>
+            <img src="/icons/icon-close.svg" alt="" />
+            <span class="h-sr-only">Close menu</span>
+          </button>
+        </div>
+        <div class="c-offcanvas__body">
+          <nav>
+            <ul class="c-nav c-nav--vertical">
+              <li class="c-nav__item">
+                <a class="c-nav__link" href="#">Collections</a>
+              </li>
+              <li class="c-nav__item">
+                <a class="c-nav__link" href="#">Men</a>
+              </li>
+              <li class="c-nav__item">
+                <a class="c-nav__link" href="#">Women</a>
+              </li>
+              <li class="c-nav__item">
+                <a class="c-nav__link" href="#">About</a>
+              </li>
+              <li class="c-nav__item">
+                <a class="c-nav__link" href="#">Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

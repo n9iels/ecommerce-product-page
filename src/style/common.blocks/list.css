@@ -1,0 +1,24 @@
+.c-list {
+}
+
+.c-list__item {
+  display: grid;
+  align-items: center;
+  color: var(--color-dark-gray-blue);
+  column-gap: var(--spacer);
+  grid-template-columns: 15% auto 16px;
+}
+
+.c-list__body {
+  display: flex;
+  flex-direction: column;
+  align-items: space-around;
+}
+
+.c-list__body > *:not(:last-child) {
+  margin-bottom: var(--spacer-sm);
+}
+
+.c-list__start > * {
+  border-radius: var(--rounded-sm);
+}

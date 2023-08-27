@@ -1,0 +1,47 @@
+.c-button {
+  --btn-background-color: transparent;
+  --btn-color: initial;
+  --btn-font-size: var(--font-size-sm);
+
+  display: inline-block;
+  border-radius: var(--rounded);
+  background-color: var(--btn-background-color);
+  color: var(--btn-color);
+  font-size: var(--btn-font-size);
+}
+
+.c-button:hover {
+  opacity: 0.8;
+}
+
+.c-button--primary {
+  --btn-background-color: var(--color-orange);
+  --btn-color: var(--color-white);
+
+  padding: var(--spacer) var(--spacer-xxl);
+}
+
+.c-button--primary:focus {
+  outline: 3px solid var(--color-red);
+}
+
+.c-button--shadow {
+  box-shadow: 0px 14px 20px -15px var(--color-orange);
+}
+
+.c-button--full-width {
+  display: block;
+  width: 100%;
+}
+
+.c-button--badge .c-badge {
+  position: absolute;
+  top: 5px;
+  right: -10px;
+}
+
+.c-button__icon {
+  padding-right: var(--spacer-sm);
+  fill: var(--btn-color) !important;
+  vertical-align: top;
+}

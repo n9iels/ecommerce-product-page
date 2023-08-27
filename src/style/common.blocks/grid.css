@@ -1,0 +1,22 @@
+.l-grid {
+  --grid-column-gap: var(--spacer);
+  --grid-row-gap: var(--spacer);
+
+  display: grid;
+  column-gap: var(--grid-column-gap);
+  row-gap: var(--grid-row-gap);
+}
+
+.l-grid--gap-4xl {
+  --grid-column-gap: calc(var(--spacer-xl) * 4);
+}
+
+.l-grid--h-center {
+  align-items: center;
+}
+
+@media (min-width: 992px) {
+  .l-grid--cols-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

@@ -1,0 +1,16 @@
+.l-main {
+  max-width: var(--max-width-desktop);
+  margin: 0 var(--spacer-xl);
+  margin-bottom: var(--spacer-xxl);
+}
+
+@media (min-width: 992px) {
+  .l-main {
+    margin: 0 auto;
+  }
+
+  .l-main--product {
+    padding: calc(var(--spacer) * 4);
+    margin-top: var(--spacer-xxl);
+  }
+}

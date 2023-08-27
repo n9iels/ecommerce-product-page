@@ -1,0 +1,27 @@
+.c-offcanvas {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: none;
+  background-color: var(--color-black-transparent);
+}
+
+.c-offcanvas__container {
+  max-width: 60vw;
+  height: 100vh;
+  padding: var(--spacer);
+  background-color: var(--color-white);
+}
+
+.c-offcanvas__header {
+  padding-bottom: calc(var(--spacer-xl) * 2);
+}
+
+@media (min-width: 994px) {
+  .c-offcanvas,
+  .c-offcanvas--active {
+    display: none;
+  }
+}

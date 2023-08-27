@@ -1,0 +1,44 @@
+:root {
+  /* Colors */
+  --color-dark-gray-blue: hsl(219, 9%, 45%);
+  --color-gray-blue: hsl(220, 14%, 75%);
+  --color-light-gray-blue: hsl(223, 64%, 98%);
+  --color-white: hsl(0, 0%, 100%);
+  --color-black: hsl(0, 0%, 0%);
+  --color-black-transparent: hsla(0, 0%, 0%, 0.75);
+  --color-orange: hsl(26, 100%, 55%);
+  --color-orange-pale: hsl(25, 100%, 94%);
+  --color-orange-pale-transparent: hsla(25, 100%, 94%, 0.6);
+  --color-red: hsl(17, 80%, 48%);
+
+  /* Font */
+  --font-size-xs: 11px;
+  --font-size-sm: 15px;
+  --font-size-base: 16px;
+  --font-size-lg: 17px;
+  --font-weight-bold: 700;
+  --font-weight-normal: 400;
+  --font-letter-spacing-wide: 2px;
+
+  /* Border */
+  --rounded-sm: 0.5rem;
+  --rounded: 0.75rem;
+  --rounded-full: 100%;
+
+  /* Layout */
+  --max-width-desktop: 1140px;
+  --max-width-mobile: 375px;
+  --breakpoint-desktop: 768px;
+  --spacer-xs: 0.25rem;
+  --spacer-sm: 0.5rem;
+  --spacer: 1rem;
+  --spacer-lg: 1.25rem;
+  --spacer-xl: 1.5rem;
+  --spacer-xxl: 2rem;
+}
+
+body {
+  background-color: var(--color-white);
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: var(--font-size-base);
+}
