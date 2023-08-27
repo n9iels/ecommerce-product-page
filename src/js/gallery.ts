@@ -51,7 +51,7 @@ class Gallery extends BaseComponent {
     newImage.navElement.classList.add("c-gallery__nav-button--active");
 
     this.currentItemIndex = index;
-    this.$currentImage.src = newImage.url;
+    this.$currentImage.src = import.meta.env.BASE_URL + newImage.url;
   }
 
   nextImage() {
